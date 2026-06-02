@@ -1,0 +1,258 @@
+﻿using System.Data;
+using Dapper;
+using GuidYu_API.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Text.Json;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace GuidYu_API.Controllers;
+
+[Authorize(Roles = "Admin")]
+[ApiController]
+[Route("api/admin/users")]
+public class AdminUsersController : ControllerBase
+{
+    private readonly string _connectionString;
+
+    public AdminUsersController(IConfiguration configuration)
+    {
+        _connectionString = configuration.GetConnectionString("DefaultConnection") 
+            ?? throw new InvalidOperationException("DefaultConnection string not found.");
+    }
+
+    private IDbConnection CreateConnection() => new SqlConnection(_connectionString);
+
+    [HttpGet]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        using var connection = CreateConnection();
+        var sql = @"
+            SELECT 
+                u.Id, u.FullName, u.Email, u.Role, u.CreatedAt, u.LastLoginAt, u.IsBlocked, u.ProfileImageUrl,
+                ud.CareerGoal, ud.Skills, ud.Interests,
+                COALESCE((
+                    SELECT CAST(COUNT(CASE WHEN tp.IsCompleted = 1 THEN 1 END) * 100.0 / NULLIF(COUNT(*), 0) AS FLOAT) 
+                    FROM ModuleTopics mt 
+                    JOIN RoadmapModules rm ON mt.ModuleId = rm.Id
+                    JOIN Roadmaps r ON rm.RoadmapId = r.Id
+                    JOIN Careers c ON r.CareerId = c.Id
+                    LEFT JOIN TopicProgress tp ON mt.Id = tp.TopicId AND tp.UserId = u.Id
+                    WHERE c.Title = ud.CareerGoal
+                ), 0) as CompletionPercentage
+            FROM Users u
+            LEFT JOIN UserDetails ud ON u.Id = ud.UserId
+            ORDER BY u.CreatedAt DESC";
+        var users = await connection.QueryAsync<UserAdminDto>(sql);
+        return Ok(users);
+    }
+
+    [HttpPut("{id}/role")]
+    public async Task<IActionResult> UpdateUserRole(int id, [FromBody] string role)
+    {
+        using var connection = CreateConnection();
+        var sql = "UPDATE Users SET Role = @Role WHERE Id = @Id";
+        await connection.ExecuteAsync(sql, new { Role = role, Id = id });
+        return Ok();
+    }
+
+    [HttpPut("block/{id}")]
+    public async Task<IActionResult> BlockUser(int id)
+    {
+        using var connection = CreateConnection();
+        var sql = "UPDATE Users SET IsBlocked = 1 WHERE Id = @Id";
+        await connection.ExecuteAsync(sql, new { Id = id });
+        return Ok();
+    }
+
+    [HttpPut("unblock/{id}")]
+    public async Task<IActionResult> UnblockUser(int id)
+    {
+        using var connection = CreateConnection();
+        var sql = "UPDATE Users SET IsBlocked = 0 WHERE Id = @Id";
+        await connection.ExecuteAsync(sql, new { Id = id });
+        return Ok();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        using var connection = CreateConnection();
+        var sql = "DELETE FROM Users WHERE Id = @Id";
+        await connection.ExecuteAsync(sql, new { Id = id });
+        return Ok();
+    }
+
+    [HttpGet("{id}/career")]
+    public async Task<IActionResult> GetUserCareer(int id)
+    {
+        using var connection = CreateConnection();
+        var careerGoal = await connection.QueryFirstOrDefaultAsync<string>(
+            "SELECT CareerGoal FROM UserDetails WHERE UserId = @UserId", new { UserId = id });
+        
+        if (string.IsNullOrEmpty(careerGoal)) 
+            return NotFound(new { message = "User has no career goal assigned." });
+        
+        var career = await connection.QueryFirstOrDefaultAsync<dynamic>(
+            "SELECT * FROM Careers WHERE Title = @Title", new { Title = careerGoal });
+
+        if (career == null)
+        {
+            // Dynamic custom career representation
+            return Ok(new {
+                Id = 0,
+                Title = careerGoal,
+                Description = "Customized Dynamic Neural Path tailored by AI",
+                Category = "Custom",
+                Difficulty = "Intermediate"
+            });
+        }
+        
+        return Ok(career);
+    }
+
+    [HttpGet("{id}/roadmap")]
+    public async Task<IActionResult> GetUserRoadmap(int id)
+    {
+        using var connection = CreateConnection();
+        var careerGoal = await connection.QueryFirstOrDefaultAsync<string>(
+            "SELECT CareerGoal FROM UserDetails WHERE UserId = @UserId", new { UserId = id });
+        
+        if (string.IsNullOrEmpty(careerGoal)) 
+            return NotFound(new { message = "User has no career goal assigned." });
+
+        var career = await connection.QueryFirstOrDefaultAsync<dynamic>(
+            "SELECT * FROM Careers WHERE Title = @Title", new { Title = careerGoal });
+
+        if (career != null)
+        {
+            var roadmap = await connection.QueryFirstOrDefaultAsync<dynamic>(
+                "SELECT * FROM Roadmaps WHERE CareerId = @CareerId", new { CareerId = (int)career.Id });
+
+            if (roadmap != null)
+            {
+                int roadmapId = (int)roadmap.Id;
+                var sqlModules = "SELECT * FROM RoadmapModules WHERE RoadmapId = @RoadmapId ORDER BY [Order]";
+                var modules = (await connection.QueryAsync<dynamic>(sqlModules, new { RoadmapId = roadmapId })).ToList();
+
+                foreach (var module in modules)
+                {
+                    var sqlTopics = "SELECT * FROM ModuleTopics WHERE ModuleId = @ModuleId ORDER BY [Order]";
+                    module.topics = (await connection.QueryAsync<dynamic>(sqlTopics, new { ModuleId = (int)module.Id })).ToList();
+                }
+
+                roadmap.modules = modules;
+                return Ok(roadmap);
+            }
+        }
+
+        // Fallback: Check MyCareerMap for customized roadmap modules
+        var customMaps = (await connection.QueryAsync<dynamic>(
+            "SELECT ModuleName, SyllabusData FROM MyCareerMap WHERE UserId = @UserId AND CareerName = @CareerName",
+            new { UserId = id, CareerName = careerGoal })).ToList();
+
+        if (customMaps.Any())
+        {
+            var customModules = new List<object>();
+            int mockModuleId = 10000;
+            int idx = 1;
+            foreach (var map in customMaps)
+            {
+                var topicsList = new List<object>();
+                try
+                {
+                    var syllabus = JsonSerializer.Deserialize<SyllabusResponse>((string)map.SyllabusData, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    if (syllabus?.Topics != null)
+                    {
+                        int topicIdx = 1;
+                        foreach (var topic in syllabus.Topics)
+                        {
+                            topicsList.Add(new {
+                                Id = mockModuleId * 10 + topicIdx,
+                                ModuleId = mockModuleId,
+                                Title = topic.Title,
+                                Order = topicIdx
+                            });
+                            topicIdx++;
+                        }
+                    }
+                }
+                catch {}
+
+                customModules.Add(new {
+                    Id = mockModuleId,
+                    RoadmapId = 9999,
+                    Title = (string)map.ModuleName,
+                    Order = idx,
+                    Topics = topicsList
+                });
+                mockModuleId++;
+                idx++;
+            }
+
+            return Ok(new {
+                Id = 9999,
+                CareerId = 0,
+                Title = $"{careerGoal} Custom Neural Path",
+                Description = "Tailored AI learning plan generated by GuideYu.",
+                modules = customModules
+            });
+        }
+
+        return NotFound(new { message = "No roadmap details exist for this user." });
+    }
+
+    [HttpGet("{id}/progress")]
+    public async Task<IActionResult> GetUserProgress(int id)
+    {
+        using var connection = CreateConnection();
+        var careerGoal = await connection.QueryFirstOrDefaultAsync<string>(
+            "SELECT CareerGoal FROM UserDetails WHERE UserId = @UserId", new { UserId = id });
+        
+        if (string.IsNullOrEmpty(careerGoal)) 
+            return Ok(new { modules = new object() });
+
+        var career = await connection.QueryFirstOrDefaultAsync<dynamic>(
+            "SELECT * FROM Careers WHERE Title = @Title", new { Title = careerGoal });
+
+        if (career == null) 
+            return Ok(new { modules = new object() });
+
+        var roadmap = await connection.QueryFirstOrDefaultAsync<dynamic>(
+            "SELECT * FROM Roadmaps WHERE CareerId = @CareerId", new { CareerId = (int)career.Id });
+
+        if (roadmap == null) 
+            return Ok(new { modules = new object() });
+
+        var sqlProgress = @"
+            SELECT 
+                rm.Id as ModuleId,
+                COUNT(mt.Id) as TotalTopics,
+                COUNT(tp.Id) as CompletedTopics
+            FROM RoadmapModules rm
+            LEFT JOIN ModuleTopics mt ON mt.ModuleId = rm.Id
+            LEFT JOIN TopicProgress tp ON tp.TopicId = mt.Id AND tp.UserId = @UserId AND tp.IsCompleted = 1
+            WHERE rm.RoadmapId = @RoadmapId
+            GROUP BY rm.Id";
+
+        var progressList = await connection.QueryAsync<dynamic>(sqlProgress, new { RoadmapId = (int)roadmap.Id });
+        
+        var modulesDict = new Dictionary<string, object>();
+        foreach (var p in progressList)
+        {
+            double percentage = 0;
+            if (p.TotalTopics > 0)
+            {
+                percentage = Math.Round(((double)p.CompletedTopics * 100.0) / (double)p.TotalTopics, 1);
+            }
+            modulesDict[p.ModuleId.ToString()] = new { completionPercentage = percentage };
+        }
+
+        return Ok(new { modules = modulesDict });
+    }
+}

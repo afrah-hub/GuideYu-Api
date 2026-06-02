@@ -1,0 +1,422 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\iaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\iaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\recommendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\recommendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\sql\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\sql\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\careerpathservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\careerpathservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\dtos\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\dtos\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\controllers\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\controllers\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\guidyu-api.csproj.backup (2).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\guidyu-api.csproj.backup (2).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\guidyu-api.csproj.backup (1).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\guidyu-api.csproj.backup (1).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|c:\\users\\afrah\\documents\\.net\\guidyu-api\\guidyu-api\\guidyu-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A4B4A32C-0A8B-1A39-BBAA-BD01C6D5FF6A}|GuidYu-API\\GuidYu-API.csproj|solutionrelative:guidyu-api\\guidyu-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\AdminUsersController.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\AdminUsersController.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\AdminUsersController.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\AdminUsersController.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAowBABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:10:55.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Sql\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Sql\\DatabaseInitializer.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Sql\\DatabaseInitializer.cs",
+              "RelativeToolTip": "GuidYu-API\\Sql\\DatabaseInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:02:00.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Program.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Program.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Program.cs",
+              "RelativeToolTip": "GuidYu-API\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAjwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:12:17.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\appsettings.json",
+              "RelativeDocumentMoniker": "GuidYu-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\appsettings.json",
+              "RelativeToolTip": "GuidYu-API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T05:11:36.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GuidYu-API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GuidYu-API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-22T05:09:42.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAiService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IAiService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\IAiService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IAiService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\IAiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:02:21.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "GuidYu-API\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAYwJEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:43.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LessonsController.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\LessonsController.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\LessonsController.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\LessonsController.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\LessonsController.cs",
+              "ViewState": "AgIAAP8BAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:03:33.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RecommendationsController.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\RecommendationsController.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\RecommendationsController.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\RecommendationsController.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\RecommendationsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:01:20.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\AuthService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\AuthService.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAkwBcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T09:23:29.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CareerPathService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\CareerPathService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\CareerPathService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\CareerPathService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\CareerPathService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:00:55.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwK8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:05:58.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IAuthService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T09:25:00.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "GuidYu-API\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:41.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Models\\User.cs",
+              "RelativeToolTip": "GuidYu-API\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T09:23:23.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:06:06.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateProfileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\DTOs\\UpdateProfileRequest.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\DTOs\\UpdateProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:27.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\DTOs\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\RegisterRequest.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\DTOs\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:26.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\DTOs\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:25.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GuidYu-API.csproj.Backup (1).tmp",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj.Backup (1).tmp",
+              "RelativeDocumentMoniker": "GuidYu-API\\GuidYu-API.csproj.Backup (1).tmp",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj.Backup (1).tmp",
+              "RelativeToolTip": "GuidYu-API\\GuidYu-API.csproj.Backup (1).tmp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-24T09:25:09.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IPhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IPhotoService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\IPhotoService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\IPhotoService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\IPhotoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T09:24:53.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\PhotoService.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Services\\PhotoService.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Services\\PhotoService.cs",
+              "RelativeToolTip": "GuidYu-API\\Services\\PhotoService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T09:24:54.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "GuidYu-API\\Controllers\\DTOs\\AuthResponse.cs",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\Controllers\\DTOs\\AuthResponse.cs",
+              "RelativeToolTip": "GuidYu-API\\Controllers\\DTOs\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:11:24.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GuidYu-API.csproj.Backup (2).tmp",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj.Backup (2).tmp",
+              "RelativeDocumentMoniker": "GuidYu-API\\GuidYu-API.csproj.Backup (2).tmp",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj.Backup (2).tmp",
+              "RelativeToolTip": "GuidYu-API\\GuidYu-API.csproj.Backup (2).tmp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-24T09:25:11.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GuidYu-API.csproj",
+              "DocumentMoniker": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj",
+              "RelativeDocumentMoniker": "GuidYu-API\\GuidYu-API.csproj",
+              "ToolTip": "C:\\Users\\afrah\\Documents\\.NET\\GuidYu-API\\GuidYu-API\\GuidYu-API.csproj",
+              "RelativeToolTip": "GuidYu-API\\GuidYu-API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T05:18:48.107Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
