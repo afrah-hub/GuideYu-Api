@@ -22,6 +22,23 @@ public class DatabaseInitializer
         var connectionString = _configuration.GetConnectionString("DefaultConnection") 
                                ?? throw new InvalidOperationException("DefaultConnection string not found.");
 
+        // First attempt: Connect directly to target database (needed for Azure SQL where master DB access is restricted)
+        try
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                CreateTables(connection);
+                return; // Initialization successful, skip fallback
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Direct database connection failed (normal if database does not exist yet): {ex.Message}");
+            Console.WriteLine("Attempting fallback to 'master' database to check/create database...");
+        }
+
+        // Second attempt: Fallback to master to create database (standard for local dev)
         try 
         {
             var builder = new SqlConnectionStringBuilder(connectionString);

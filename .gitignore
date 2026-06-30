@@ -1,0 +1,26 @@
+## Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build outputs
+bin/
+obj/
+GuidYu-API/bin/
+GuidYu-API/obj/
+**/bin/
+**/obj/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## OS files
+.DS_Store
+Thumbs.db
