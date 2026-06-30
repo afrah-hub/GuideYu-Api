@@ -9,6 +9,12 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var port = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrEmpty(port))
+{
+    builder.WebHost.UseUrls($"http://*:{port}");
+}
+
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
@@ -88,11 +94,17 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
 app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = "swagger"; // Serves Swagger UI at /swagger (matching launchSettings.json)
+});
+
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
